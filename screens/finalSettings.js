@@ -1,11 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import Navigator from "./routes/drawer";
 
-export default function App() {
-  return <Navigator />;
-}
+const FinalSettings = () => (
+  <View style={styles.container}>
+    <Text>This is Final Settings Screen</Text>
+    <StatusBar style="auto" />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -15,3 +17,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default FinalSettings;
